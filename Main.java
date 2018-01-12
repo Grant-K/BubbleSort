@@ -39,16 +39,16 @@ public class Main
     public static void printPartialArray(int arr[], int index1, int index2)
     {
         int n = arr.length;
-        for (int i=0; i < n; ++i)
-            if(i == index1)
+        for (int i = 0; i < n; ++i)
+        {
+            if(i != index1 && i != index2)
             {
-                System.out.print("\u001B[1m" + arr[i] + "\001B[0m ");
-            }else if(i == index2)
-            {
-                System.out.print("\033[1m" + arr[i] + "\033[0m ");
+                System.out.print(arr[i] + " ");
             }else
-            System.out.print(arr[i] + " ");
+                System.out.print(" _ ");
+        }
         System.out.println();
+        System.out.println("The swapped valued were " + arr[index1] + " and " + arr[index2] + " they were where the \"_\" were shown");
     }
  
     // Driver method to test above
