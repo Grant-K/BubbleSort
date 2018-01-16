@@ -15,7 +15,7 @@ public class Main
         printArray(arr);
         System.out.println();
         for (int i = 0; i < n-1; i++)
-            for (int j = 0; j < n-i-1; j++)
+            for (int j = 0; j < n-1; j++)
                 if (arr[j] > arr[j+1])
                 {
                     // swap temp and arr[i]
@@ -48,7 +48,7 @@ public class Main
                 System.out.print(" _ ");
         }
         System.out.println();
-        System.out.println("The swapped valued were " + arr[index1] + " and " + arr[index2] + " they were where the \"_\" were shown");
+        System.out.println("The swapped valued were " + arr[index2] + " and " + arr[index1] + " they were where the \"_\" were shown");
     }
  
     // Driver method to test above
